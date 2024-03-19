@@ -5,13 +5,17 @@
 
 .searchBar {
     font-size: 20px;
-
+    display: block;
 }
 
 .video-title {
 
 }
 
-.div-ex {
+.video-preview {
     display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    margin-right: 15px
 }
+

@@ -64,7 +64,7 @@
 
 .search-icon {
     height: 25px;
-    margin-left: 12px;
+    margin-top: 5px;
 }
 
 .search-button {
@@ -79,15 +79,21 @@
 }
 
 .search-button,
-.voice-search-button {
-    position: relative;
+.voice-search-button,
+.upload-icon-div,
+.noti-icon-div {
     display: flex;
+    flex-direction: column;
     justify-self: center;
     align-items: center;
+    position: relative;
 }
 
 .search-button .tooltip,
-.voice-search-button .tooltip {
+.voice-search-button .tooltip,
+.upload-icon-div .tooltip,
+.noti-icon-div .tooltip {
+    font-family: Roboto, Arial;
     position: absolute;
     background-color: gray;
     color: white;
@@ -104,7 +110,9 @@
 }
 
 .search-button:hover .tooltip, 
-.voice-search-button:hover .tooltip {
+.voice-search-button:hover .tooltip,
+.upload-icon-div:hover .tooltip,
+.noti-icon-div:hover .tooltip {
     opacity: 100;
     transition: 0.15s;
 }
@@ -122,6 +130,7 @@
 .voice-search-icon {
     height: 24px;
     margin-left: 2.5px;
+    margin-top: 7px;
 }
 
 .right-section {
@@ -168,4 +177,6 @@
 .user-pfp {
     height: 32px;
     border-radius: 16px;
+    cursor: pointer;
 }
+

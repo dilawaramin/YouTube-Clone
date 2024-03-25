@@ -17,7 +17,7 @@
 
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <div class="left-section">
             <img class="hamb-menu" src="icons/hamburger-menu.svg">
             <img class="yt-logo" src="icons/youtube-logo.svg">
@@ -27,6 +27,7 @@
 
             <input class="searchBar" type="text" placeholder="Search">
 
+            <!--Put position absolute inside position relative-->
             <button class="search-button">
                 <img class="search-icon" src="icons/search.svg">
                 <div class="tooltip">Search</div>
@@ -55,9 +56,9 @@
             <img class="user-pfp" src="pfps/my-channel.jpeg">
         </div>
 
-    </div>
+    </header>
 
-    <div class="sidebar">
+    <nav class="sidebar">
         <div class="sidebar-link">
             <img src="icons/home.svg">
             <div>Home</div>
@@ -83,150 +84,382 @@
             <div>Library</div>
         </div>
 
-    </div>
+    </nav>
 
+    <main>
+        <section class="video-grid">
 
-    <div class="video-grid">
+            <div class="video-preview">
+                <div  class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/thumbnail-1.webp">
+                    <div class="video-time">14:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="profile-pic">
+                        <img class="pfp" src="pfps/channel-1.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Talking Tech and AI with Google CEO Sundar Pichai!s 
+                        </p>
+                        <p class="video-author">
+                            Marques Brownlee
+                        </p>
+                        <p class="video-stats">
+                            3.4M views &#183 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div  class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/thumbnail-2.webp">
+                    <div class="video-time">8:22</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="profile-pic">
+                        <img class="pfp" src="pfps/channel-2.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Try Not To Laugh Challenge #9
+                        </p>
+                        <p class="video-author">
+                            Markiplier
+                        </p>
+                        <p class="video-stats">
+                            19M views &#183 4 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div  class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/thumbnail-4.webp">
+                    <div class="video-time">22:09</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="profile-pic">
+                        <img class="pfp" src="pfps/channel-4.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            The Simplest Math Problem No One Can Solve - Collatz Conjecture
+                        </p>
+                        <p class="video-author">
+                            Veritasium
+                        </p>
+                        <p class="video-stats">
+                            18M views &#183 4 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div  class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/thumbnail-5.webp">
+                    <div class="video-time">11:17</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="profile-pic">
+                        <img class="pfp" src="pfps/channel-5.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Kadane's Algorithm to Maximum Sum Subarray Problem
+                        </p>
+                        <p class="video-author">
+                            CS Dojo
+                        </p>
+                        <p class="video-stats">
+                            519K views &#183 5 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div  class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/thumbnail-8.webp">
+                    <div class="video-time">7:12</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="profile-pic">
+                        <img class="pfp" src="pfps/channel-8.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Inside The World's Biggest Passenger Plane
+                        </p>
+                        <p class="video-author">
+                            Tech Vision
+                        </p>
+                        <p class="video-stats">
+                            3.7M views &#183 10 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div  class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/thumbnail-9.webp">
+                    <div class="video-time">13:17</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="profile-pic">
+                        <img class="pfp" src="pfps/channel-9.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            The SECRET to Super Human STRENGTH
+                        </p>
+                        <p class="video-author">
+                            ThenX
+                        </p>
+                        <p class="video-stats">
+                            20M views &#183 3 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div  class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/thumbnail-11.webp">
+                    <div class="video-time">4:10</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="profile-pic">
+                        <img class="pfp" src="pfps/channel-11.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Dubai's Crazy Underwater Train and Other Things #Only in Dubai
+                        </p>
+                        <p class="video-author">
+                            Destination Tips
+                        </p>
+                        <p class="video-stats">
+                            3M views &#183 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div  class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/thumbnail-12.webp">
+                    <div class="video-time">4:51</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="profile-pic">
+                        <img class="pfp" src="pfps/channel-12.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            What would happen if you didn't drink water? - Mia Nacamulli
+                        </p>
+                        <p class="video-author">
+                            TED-Ed
+                        </p>
+                        <p class="video-stats">
+                            12M views &#183 5 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div  class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/thumbnail-13.jpeg">
+                    <div class="video-time">7:55</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="profile-pic">
+                        <img class="pfp" src="pfps/channel-13.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Why I focus on patterns instead of technologies
+                        </p>
+                        <p class="video-author">
+                            NeetCodeIO
+                        </p>
+                        <p class="video-stats">
+                            181K views &#183 1 month ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div  class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/thumbail-14.jpeg">
+                    <div class="video-time">11:43</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="profile-pic">
+                        <img class="pfp" src="pfps/channel-14.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            I Landed A Rocket Like SpaceX - Scout F
+                        </p>
+                        <p class="video-author">
+                            BPS.space
+                        </p>
+                        <p class="video-stats">
+                            8.2M views &#183 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div  class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/thumbnail-15.jpeg">
+                    <div class="video-time">5:57</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="profile-pic">
+                        <img class="pfp" src="pfps/channel-15.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Making a Game in Python with No Experience
+                        </p>
+                        <p class="video-author">
+                            Goodgis
+                        </p>
+                        <p class="video-stats">
+                            1.4M views &#183 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div  class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/thumbnail-16.webp">
+                    <div class="video-time">17:12</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="profile-pic">
+                        <img class="pfp" src="pfps/channel-16.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            I BUILT the Worlds Biggest Gaming TV
+                        </p>
+                        <p class="video-author">
+                            Linus Tech Tips
+                        </p>
+                        <p class="video-stats">
+                            2M views &#183 7 days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div  class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/thumbnail-2.webp">
+                    <div class="video-time">8:22</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="profile-pic">
+                        <img class="pfp" src="pfps/channel-2.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Try Not To Laugh Challenge #9
+                        </p>
+                        <p class="video-author">
+                            Markiplier
+                        </p>
+                        <p class="video-stats">
+                            19M views &#183 4 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div  class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/thumbnail-5.webp">
+                    <div class="video-time">11:17</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="profile-pic">
+                        <img class="pfp" src="pfps/channel-5.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Kadane's Algorithm to Maximum Sum Subarray Problem
+                        </p>
+                        <p class="video-author">
+                            CS Dojo
+                        </p>
+                        <p class="video-stats">
+                            519K views &#183 5 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div  class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/thumbnail-1.webp">
+                    <div class="video-time">14:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="profile-pic">
+                        <img class="pfp" src="pfps/channel-1.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Talking Tech and AI with Google CEO Sundar Pichai!s 
+                        </p>
+                        <p class="video-author">
+                            Marques Brownlee
+                        </p>
+                        <p class="video-stats">
+                            3.4M views &#183 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div  class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/thumbnail-4.webp">
+                    <div class="video-time">22:09</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="profile-pic">
+                        <img class="pfp" src="pfps/channel-4.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            The Simplest Math Problem No One Can Solve - Collatz Conjecture
+                        </p>
+                        <p class="video-author">
+                            Veritasium
+                        </p>
+                        <p class="video-stats">
+                            18M views &#183 4 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+    </main>
 
-        <div class="video-preview">
-            <div  class="thumbnail-row">
-                <img class="thumbnail" src="Thumbnails/thumbnail-1.webp">
-                <div class="video-time">14:20</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="profile-pic">
-                    <img class="pfp" src="pfps/channel-1.jpeg">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        Talking Tech and AI with Google CEO Sundar Pichai!s 
-                    </p>
-                    <p class="video-author">
-                        Marques Brownlee
-                    </p>
-                    <p class="video-stats">
-                        3.4M views &#183 1 year ago
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview">
-            <div  class="thumbnail-row">
-                <img class="thumbnail" src="Thumbnails/thumbnail-2.webp">
-                <div class="video-time">8:22</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="profile-pic">
-                    <img class="pfp" src="pfps/channel-2.jpeg">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        Try Not To Laugh Challenge #9
-                    </p>
-                    <p class="video-author">
-                        Markiplier
-                    </p>
-                    <p class="video-stats">
-                        19M views &#183 4 years ago
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview">
-            <div  class="thumbnail-row">
-                <img class="thumbnail" src="Thumbnails/thumbnail-4.webp">
-                <div class="video-time">22:09</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="profile-pic">
-                    <img class="pfp" src="pfps/channel-4.jpeg">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        The Simplest Math Problem No One Can Solve - Collatz Conjecture
-                    </p>
-                    <p class="video-author">
-                        Veritasium
-                    </p>
-                    <p class="video-stats">
-                        18M views &#183 4 months ago
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview">
-            <div  class="thumbnail-row">
-                <img class="thumbnail" src="Thumbnails/thumbnail-5.webp">
-                <div class="video-time">11:17</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="profile-pic">
-                    <img class="pfp" src="pfps/channel-5.jpeg">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        Kadane's Algorithm to Maximum Sum Subarray Problem
-                    </p>
-                    <p class="video-author">
-                        CS Dojo
-                    </p>
-                    <p class="video-stats">
-                        519K views &#183 5 years ago
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview">
-            <div  class="thumbnail-row">
-                <img class="thumbnail" src="Thumbnails/thumbnail-8.webp">
-                <div class="video-time">7:12</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="profile-pic">
-                    <img class="pfp" src="pfps/channel-8.jpeg">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        Inside The World's Biggest Passenger Plane
-                    </p>
-                    <p class="video-author">
-                        Tech Vision
-                    </p>
-                    <p class="video-stats">
-                        3.7M views &#183 10 months ago
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview">
-            <div  class="thumbnail-row">
-                <img class="thumbnail" src="Thumbnails/thumbnail-9.webp">
-                <div class="video-time">13:17</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="profile-pic">
-                    <img class="pfp" src="pfps/channel-9.jpeg">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        The SECRET to Super Human STRENGTH
-                    </p>
-                    <p class="video-author">
-                        ThenX
-                    </p>
-                    <p class="video-stats">
-                        20M views &#183 3 years ago
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </div>
 
 </body>
 </html>
